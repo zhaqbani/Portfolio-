@@ -1,36 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zeba Haqbani – Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeba Haqbani Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="android-chrome-512x512.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Federo&family=Grenze:wght@400;600&family=Hina+Mincho&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Hello, I am Zeba</h1>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Fixed Resume Button -->
+  <a href="https://drive.google.com/file/d/1iwFLvogua3ZKY1EPI7fEHspmxKVbis1R/view?usp=sharing"
+     target="_blank" class="resume-fixed-btn" aria-label="Open resume in a new tab">
+    <i class="fas fa-file-alt"></i> Resume
+  </a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img src="logo6.png" alt="Ghazaleh logo" style="height:60px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home" role="banner" aria-label="Intro">
+    <div class="hero__inner">
+      <h1 class="hero__title">Zeba Haqbani</h1>
+      <p class="hero__subtitle">Front-end Developer Enthusiast • ESL Instructor</p>
+      <div class="hero__cta">
+        <a class="btn-cta" href="#skills">View Skills</a>
+        <a class="btn-ghost" href="https://drive.google.com/file/d/1iwFLvogua3ZKY1EPI7fEHspmxKVbis1R/view?usp=sharing"
+           target="_blank" rel="noopener">Download Résumé</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#about" aria-label="Scroll to About">▼</a>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate Afghan student interested in technology, digital empowerment, and community building.</p>
-  </section>
+  <!-- Main -->
+  <main>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here you can showcase your work and volunteer contributions.</p>
-  </section>
+    <!-- About -->
+    <section class="aboutme" id="about">
+      <div class="icon-box"><i class="fa-regular fa-circle-user"></i></div>
+      <div class="about-text">
+        <h2 class="text-dec">Who am I?</h2>
+        <p>
+          I am an aspiring student with a deep commitment to personal growth, education, and creativity,
+          developing skills in ESL instruction and front-end web development (HTML/CSS/UX).
+        </p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-  </section>
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="text-dec">My Skills</h2>
+      <div class="skills-badges">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">Responsive Design</span>
+        <span class="badge">GitHub</span>
+        <span class="badge">UI/UX Basics</span>
+        <span class="badge">ESL Instruction</span>
+        <span class="badge">Public Speaking</span>
+        <span class="badge">Lesson Planning</span>
+        <span class="badge">Creativity</span>
+        <span class="badge">Time Management</span>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- CERTIFICATES -->
+    <section class="certifications" id="certifications" aria-label="Certificates and awards">
+      <h2 class="text-dec">My Certifications</h2>
+
+      <!-- Slider -->
+      <div id="certCarousel" class="carousel slide cert-carousel" data-bs-ride="false">
+        <!-- indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Keep the order in sync with CERT_DATA below -->
+          <div class="carousel-item active" data-index="0">
+            <img src="Chatgpt.jpg"d-block w-100" loading="lazy" alt="ChatGPT Certificate">
+          </div>
+          <div class="carousel-item" data-index="1">
+            <img src="Freelance.jpg" class="d-block w-100" loading="lazy" alt="Digital Freelance Launch Pad">
+          </div>
+          <div class="carousel-item" data-index="2">
+            <img src="html5.jpg" class="d-block \w-100" loading="lazy" alt="HTML5 Certificate">
+          </div>
+          <div class="carousel-item" data-index="3">
+            <img src="Pythone1.jpg" class="d-block w-100" loading="lazy" alt="Python Essentials Certificate">
+          </div>
+          <div class="carousel-item" data-index="4">
+            <img src="Interpersonalskills.jpg" class="d-block w-100" loading="lazy" alt="Interpersonal Skills Certificate">
+          </div>
+          <div class="carousel-item" data-index="5">
+            <img src="TEFL.jpg" class="d-block w-100" loading="lazy" alt="TEFL Certificate">
+          </div>
+          <div class="carousel-item" data-index="6">
+            <img src="british-council.jpg" class="d-block w-100" loading="lazy" alt="British Council Certificate">
+          </div>
+          <div class="carousel-item" data-index="7">
+            <img src="PC.jpeg" class="d-block w-100" loading="lazy" alt="Peace Building Certificate">
+          </div>
+          <div class="carousel-item" data-index="8">
+            <img src="Dohaamb.jpeg" class="d-block w-100" loading="lazy" alt="Doha Debates Ambassador">
+          </div>
+          <div class="carousel-item" data-index="9">
+            <img src="AUAFapp.png" class="d-block w-100" loading="lazy" alt="AUAF Appreciation Certificate">
+          </div>
+          <div class="carousel-item" data-index="10">
+            <img src="Pargarapp.jpg" class="d-block w-100" loading="lazy" alt="Pargar Academy Appreciation">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev" aria-label="Previous certificate">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next" aria-label="Next certificate">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Dynamic details -->
+      <div class="card cert-detail-card mt-3">
+        <div class="card-body">
+          <h3 class="cert-title h5 mb-2">Certificate title</h3>
+          <p class="cert-desc mb-2">Description of what this certificate covers.</p>
+          <div class="cert-meta small text-muted">
+            <span class="me-3"><i class="fa-regular fa-building"></i> <span class="cert-issuer">Issuer</span></span>
+            <span><i class="fa-solid fa-toolbox"></i> <span class="cert-skills">Skills</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experience-cards" id="experiences">
+      <h2 class="text-dec">My Experiences</h2>
+      <div class="experience-grid">
+        <div class="exp-box"><div class="exp-year">2020–2021</div><div class="exp-details"><h3>Zarifi Academy</h3><p>Volunteer English Teacher</p></div></div>
+        <div class="exp-box"><div class="exp-year">2021–2022</div><div class="exp-details"><h3>Fazilat Academy</h3><p>English Teacher</p></div></div>
+        <div class="exp-box"><div class="exp-year">2023–Present</div><div class="exp-details"><h3>Freelance</h3><p>English Teacher – Online & In-person</p></div></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-label="Contact">
+      <div class="circle-contact-box">
+        <div class="circle-contact">
+          <a href="mailto:ghazalehazimi23@gmail.com" aria-label="Email Ghazaleh">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="circle-contact">
+          <a href="https://wa.me/message/FQLT4VITTM7OM1" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="social-icon" aria-label="Social links">
+    <a href="https://www.linkedin.com/in/ghazaleh-azimi-142002ahoo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/GhazalehAzimi" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/ghazaleh-ahoo-coding" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/ahoo_ghazaleh_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/Ahoogp002?mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+  </footer>
+
+  <!-- Certificates detail logic -->
+  <script>
+    // Keep in the same order as the slides
+    const CERT_DATA = [
+      {
+        title: "ChatGPT Certificate",
+        issuer: "AI/EdTech training",
+        desc: "Prompt engineering, responsible AI use for education and content creation.",
+        skills: ["Prompting","Content Design","Ethics"]
+      },
+      {
+        title: "Digital Freelance Launch Pad",
+        issuer: "Freelance Program",
+        desc: "Personal branding, client communication, pricing, and remote work professionalism.",
+        skills: ["Branding","Client Comms","Freelancing"]
+      },
+      {
+        title: "HTML5 Certificate",
+        issuer: "Web Dev Course",
+        desc: "Semantic HTML, accessibility foundations, and modern document structure.",
+        skills: ["HTML5","A11y","Semantics"]
+      },
+      {
+        title: "Python Essentials",
+        issuer: "Programming Course",
+        desc: "Variables, control flow, functions, and problem-solving basics with Python.",
+        skills: ["Python","Algorithms","Logic"]
+      },
+      {
+        title: "Interpersonal Skills",
+        issuer: "Professional Development",
+        desc: "Communication, collaboration, conflict resolution, and empathy at work.",
+        skills: ["Communication","Teamwork","Conflict Resolution"]
+      },
+      {
+        title: "TEFL Certificate",
+        issuer: "TEFL",
+        desc: "Methods for teaching English as a foreign language; lesson planning and assessment.",
+        skills: ["Pedagogy","Assessment","Lesson Planning"]
+      },
+      {
+        title: "British Council Certificate",
+        issuer: "British Council",
+        desc: "Teacher development and enhancing teaching effectiveness.",
+        skills: ["Instruction","Feedback","Development"]
+      },
+      {
+        title: "Peace Building Certificate",
+        issuer: "Peace/Dialogue Training",
+        desc: "Conflict prevention, dialogue, and community-based peace initiatives.",
+        skills: ["Dialogue","Mediation","Civic Engagement"]
+      },
+      {
+        title: "Doha Debates Ambassador",
+        issuer: "Doha Debates",
+        desc: "Public dialogue, content, and facilitation across global issues.",
+        skills: ["Public Speaking","Facilitation","Content"]
+      },
+      {
+        title: "AUAF Appreciation",
+        issuer: "American University of Afghanistan",
+        desc: "Recognition for active participation and thoughtful contributions at Doha Debate.",
+        skills: ["Leadership","Critical Thinking","Engagement"]
+      },
+      {
+        title: "Pargar Academy Appreciation",
+        issuer: "Pargar Academy",
+        desc: "Recognition for outstanding teaching and creative instruction.",
+        skills: ["Teaching","Creativity","Curriculum"]
+      }
+    ];
+
+    function setCertDetails(i){
+      const data = CERT_DATA[i] || CERT_DATA[0];
+      document.querySelector(".cert-title").textContent  = data.title;
+      document.querySelector(".cert-desc").textContent   = data.desc;
+      document.querySelector(".cert-issuer").textContent = data.issuer;
+      document.querySelector(".cert-skills").textContent = data.skills.join(", ");
+    }
+
+    function activeIndex(){
+      const el = document.querySelector("#certCarousel .carousel-item.active");
+      return el ? Number(el.getAttribute("data-index")) : 0;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setCertDetails(activeIndex());
+      const el = document.getElementById("certCarousel");
+      el.addEventListener("slid.bs.carousel", () => setCertDetails(activeIndex()));
+    });
+  </script>
 </body>
 </html>
