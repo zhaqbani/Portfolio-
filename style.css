@@ -8,15 +8,25 @@
 *{ box-sizing:border-box; }
 body{
   margin:0;
-  font-family:'Grenze', serif;
+  font-family: 'DM Sans', sans-serif;
+  color:#010816;
+  font-size:16px;
+  line-height:1.8;
   min-height:100vh;
   background:url("bb.jpg") center/cover no-repeat;
 }
+
 body::before{
   content:"";
   position:fixed; inset:0;
   background:rgba(255,255,255,.5); /* soften brick texture */
   pointer-events:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Lexend', sans-serif;
+  font-weight:600;
+  color:#ffffff;
 }
 
 /* Navbar */
@@ -33,7 +43,7 @@ body::before{
   color:#fff;
   background-image:
     linear-gradient(to bottom, rgba(15,23,42,.55), rgba(15,23,42,.35) 40%, rgba(15,23,42,.55)),
-    url("hero.jpg");              /* <-- place your wide hero image */
+    url("hero-bg.jpg");              /* <-- place your wide hero image */
   background-size:cover;
   background-position:center;
 }
@@ -91,7 +101,13 @@ main{ max-width:1150px; margin-inline:auto; }
   display:grid; place-items:center; font-size:28px;
 }
 .about-text h2{ margin:0 0 10px; color:#333; font-size:24px; }
-.about-text p{ color:#050505; line-height:1.6; font-family:'Hina Mincho',serif; font-size:20px; }
+.about-text p{
+  color:inherit;
+  line-height:1.8;
+  font-family:'DM Sans', sans-serif;
+  font-size:1rem;
+}
+
 
 /* Skills */
 #skills{ padding:40px 20px; text-align:center; }
@@ -135,10 +151,32 @@ main{ max-width:1150px; margin-inline:auto; }
 
 /* Headings accent */
 .text-dec{
-  font-family:'Bubblegum Sans', cursive;
-  font-size:24px;
-  text-shadow:2px 2px 4px #819A91;
+  font-family:'Lexend', sans-serif;
+  font-weight:600;
+  color:#808285;
+  letter-spacing:-1px;
+  font-size:38px;
+  line-height:58px;
+  margin:0 0 12px;
+  text-shadow:none;
 }
+
+@media (max-width:1024px){
+  .text-dec{
+    font-size:40px;
+    line-height:61px;
+    text-align:center;
+  }
+}
+
+@media (max-width:767px){
+  .text-dec{
+    font-size:32px;
+    line-height:50px;
+    text-align:center;
+  }
+}
+
 
 /* Responsive tweaks */
 @media (max-width:768px){
