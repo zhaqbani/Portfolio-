@@ -20,9 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Federo&family=Grenze:wght@400;600&family=Hina+Mincho&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Lexend:wght@600&display=swap" rel="stylesheet">
 
-  <!-- Your Styles -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Fixed Resume Button -->
@@ -31,7 +32,7 @@
     <i class="fas fa-file-alt"></i> Resume
   </a>
 
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#home">
@@ -60,7 +61,7 @@
   <!-- HERO -->
   <header class="hero" id="home" role="banner" aria-label="Intro">
     <div class="hero__inner">
-      <h1 class="hero__title">Hi, I am Zeba Haqbani<br>Welcome to my Website!</h1>
+      <h1 class="hero__title">Hi, I am Zeba Haqbani <br>Welcome to my <br> Website!</h1>
       <p class="hero__subtitle">Tech Enthusiast • Community Builder • Problem Solver</p>
       <div class="hero__cta">
         <a class="btn-cta" href="#skills">View Skills</a>
@@ -71,21 +72,35 @@
     <a class="hero__scroll" href="#about" aria-label="Scroll to About">▼</a>
   </header>
 
+  <!-- Main -->
   <main>
-    <!-- ABOUT -->
+
+    <!-- About -->
     <section class="aboutme" id="about">
       <div class="icon-box"><i class="fa-regular fa-circle-user"></i></div>
       <div class="about-text">
         <h2 class="text-dec">Who am I?</h2>
         <p>
-          I am from Paktia, Afghanistan, and grew up where few girls were encouraged to study. I became the first girl in my village to complete high school, and soon, the first to enter university.
-          As Vice President of my school’s Computer Club, I learned how much I enjoy problem-solving and building things that work. I also stay active through running and once completed a marathon—endurance matters.
-          I launched an initiative helping over 10,000 Afghan girls access Coursera; 300+ completed several courses. I aim to study CS/IT and build Dari/Pashto tools that support women’s health and access to information.
+          I am from Paktia, Afghanistan, and grew up in a place where few girls were encouraged to study. <br>
+          I became the first girl in my village to complete high school, and soon, I will be the first to enter university.
+          Education, for me, has never been just about achievement—it has been a way to open doors that were once closed to girls like me. <br><br>
+          I am curious and calm by nature, someone who learns best through doing. As the Vice President of my school’s Computer Club,
+          I discovered how much I enjoy problem-solving and creating things that work.
+          Helping organize coding workshops and guiding students through their first projects made me realize how powerful technology can be when shared. <br><br>
+          Outside the classroom, I stay active through running, jogging, and gym training,
+          and once took part in a marathon—a reminder that endurance builds both strength and confidence.
+          When I began exploring online education, I saw how many Afghan girls faced the same confusion I once had about digital learning.
+          To change that, I started an initiative that helped more than 10,000 girls access free Coursera courses, with over
+          300 completing several courses each. What began as a small idea became a national network of learners helping one another succeed. <br><br>
+          I plan to study Computer Science and Information Technology abroad, focusing on how technology can address real issues faced by Afghan women.
+          My goal is to develop a mobile app in Dari and Pashto that helps women track menstrual health, access childbirth information,
+          and connect with doctors in rural areas. For me, success means being independent enough to empower others.
+          Every project I build is a step toward that vision.
         </p>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- Skills -->
     <section id="skills">
       <h2 class="text-dec">My Skills</h2>
       <div class="skills-badges">
@@ -102,12 +117,13 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS (8 items, Computer Club removed) -->
+    <!-- ================= CERTIFICATIONS (9 only) ================= -->
     <section class="certifications" id="certifications" aria-label="Certificates and awards">
       <h2 class="text-dec">My Certifications</h2>
 
+      <!-- Carousel -->
       <div id="certCarousel" class="carousel slide cert-carousel" data-bs-ride="false">
-        <!-- indicators 0..7 -->
+        <!-- Indicators: 0..8 -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -117,40 +133,53 @@
           <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
           <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
           <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
         </div>
 
         <div class="carousel-inner">
           <!-- Keep this order in sync with CERT_DATA below -->
-          <!-- 0: GOT – Marketing Lead -->
+          <!-- 0: AUAF Computer Club -->
           <div class="carousel-item active" data-index="0">
+            <img src="Chatgpt.jpg" class="d-block w-100" loading="lazy" alt="Certificate of Appreciation – AUAF Computer Club">
+          </div>
+
+          <!-- 1: GOT – Marketing Lead -->
+          <div class="carousel-item" data-index="1">
             <img src="Freelance.jpg" class="d-block w-100" loading="lazy" alt="GOT – Marketing Lead Certificate">
           </div>
-          <!-- 1: Coursera – Leading Teams -->
-          <div class="carousel-item" data-index="1">
+
+          <!-- 2: Coursera – Leading Teams -->
+          <div class="carousel-item" data-index="2">
             <img src="html5.jpg" class="d-block w-100" loading="lazy" alt="Coursera – Leading Teams: Developing as a Leader">
           </div>
-          <!-- 2: Python – ABAAD & EAGT -->
-          <div class="carousel-item" data-index="2">
+
+          <!-- 3: Python – ABAAD & EAGT -->
+          <div class="carousel-item" data-index="3">
             <img src="Pythone1.jpg" class="d-block w-100" loading="lazy" alt="Python Programming – ABAAD & EAGT">
           </div>
-          <!-- 3: Aspire Leaders Program -->
-          <div class="carousel-item" data-index="3">
+
+          <!-- 4: Aspire Leaders Program -->
+          <div class="carousel-item" data-index="4">
             <img src="Interpersonalskills.jpg" class="d-block w-100" loading="lazy" alt="Aspire Leaders Program Certificate">
           </div>
-          <!-- 4: AYLA Web Dev Moderator -->
-          <div class="carousel-item" data-index="4">
+
+          <!-- 5: AYLA Web Dev Moderator -->
+          <div class="carousel-item" data-index="5">
             <img src="TEFL.jpg" class="d-block w-100" loading="lazy" alt="Volunteer Moderator – AYLA Web Development Class">
           </div>
-          <!-- 5: Tirana Half Marathon -->
-          <div class="carousel-item" data-index="5">
+
+          <!-- 6: Tirana Half Marathon -->
+          <div class="carousel-item" data-index="6">
             <img src="PC.jpg" class="d-block w-100" loading="lazy" alt="Tirana Half Marathon Completion">
           </div>
-          <!-- 6: Cisco Intro to Cybersecurity -->
-          <div class="carousel-item" data-index="6">
+
+          <!-- 7: Cisco Intro to Cybersecurity -->
+          <div class="carousel-item" data-index="7">
             <img src="Dohaamb.jpg" class="d-block w-100" loading="lazy" alt="Introduction to Cybersecurity – Cisco Networking Academy">
           </div>
-          <!-- 7: AUAF Bootcamp – Best Innovative Software -->
-          <div class="carousel-item" data-index="7">
+
+          <!-- 8: AUAF Bootcamp – Best Innovative Software -->
+          <div class="carousel-item" data-index="8">
             <img src="AUAFapp.png" class="d-block w-100" loading="lazy" alt="Best Innovative Software – AUAF Tech Bootcamp">
           </div>
         </div>
@@ -176,37 +205,43 @@
       </div>
     </section>
 
-    <!-- EXPERIENCES (ONLY 3) -->
+    <!-- Experiences -->
     <section class="experience-cards" id="experiences" aria-label="Experience">
       <h2 class="text-dec">My Experiences</h2>
       <div class="experience-grid">
         <div class="exp-box">
-          <div class="exp-year">2022–Present</div>
-          <div class="exp-details">
-            <h3>Generation of Thinkers (GOT)</h3>
-            <p>Volunteer Marketing Director & Program Lead</p>
-          </div>
+          <div class="exp-year">2020–2021</div>
+          <div class="exp-details"><h3>Academy</h3><p>Volunteer English Teacher</p></div>
+        </div>
+
+        <div class="exp-box">
+          <div class="exp-year">2021–2022</div>
+          <div class="exp-details"><h3>Academy</h3><p>English Teacher</p></div>
         </div>
 
         <div class="exp-box">
           <div class="exp-year">2022–Present</div>
-          <div class="exp-details">
-            <h3>AYLA</h3>
-            <p>Volunteer Moderator – Web Development</p>
-          </div>
+          <div class="exp-details"><h3>Generation of Thinkers (GOT)</h3><p>Volunteer Marketing Director & Program Lead</p></div>
+        </div>
+
+        <div class="exp-box">
+          <div class="exp-year">2022–Present</div>
+          <div class="exp-details"><h3>AYLA</h3><p>Volunteer Moderator – Web Development</p></div>
         </div>
 
         <div class="exp-box">
           <div class="exp-year">2023</div>
-          <div class="exp-details">
-            <h3>AUAF Tech Bootcamp</h3>
-            <p>Team Lead – Best Innovative Software Project</p>
-          </div>
+          <div class="exp-details"><h3>AUAF Tech Bootcamp</h3><p>Team Lead – Best Innovative Software Project</p></div>
+        </div>
+
+        <div class="exp-box">
+          <div class="exp-year">2023–Present</div>
+          <div class="exp-details"><h3>Freelance</h3><p>English Teacher – Online & In-person</p></div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Contact -->
     <section id="contact" aria-label="Contact">
       <h2 class="text-dec text-center mb-3">Contact</h2>
       <div class="circle-contact-box">
@@ -224,7 +259,7 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer id="social-icon" aria-label="Social links">
     <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
@@ -233,9 +268,15 @@
     <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
   </footer>
 
-  <!-- ===== Certifications script (order 0..7) ===== -->
+  <!-- ===== Certifications script (must follow the same order 0..8) ===== -->
   <script>
     const CERT_DATA = [
+      {
+        title: "Certificate of Appreciation – AUAF Computer Club",
+        issuer: "Student Leadership",
+        desc: "Recognized for exceptional contribution to organizing student-led events, supporting peers in coding activities, and advancing campus technology engagement.",
+        skills: ["Event Coordination", "Peer Mentorship", "Technical Support"]
+      },
       {
         title: "Generation of Thinkers (GOT) – Marketing Lead Certificate",
         issuer: "Marketing Leadership",
@@ -303,5 +344,6 @@
         .addEventListener("slid.bs.carousel", () => setCertDetails(activeIndex()));
     });
   </script>
+
 </body>
 </html>
