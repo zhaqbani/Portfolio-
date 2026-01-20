@@ -15,6 +15,7 @@ body{
   line-height:1.8;
   min-height:100vh;
   background:url("bb.jpg") center/cover no-repeat;
+  
   position: relative;              /* so overlay can go behind */
 }
 
@@ -50,7 +51,7 @@ h1, h2, h3, h4, h5, h6{
   color:#fff;
   background-image:
     linear-gradient(to bottom, rgba(15,23,42,.55), rgba(15,23,42,.35) 40%, rgba(15,23,42,.55)),
-    url("hero-bg.jpg");
+    url("hero-bg.jpeg");
   background-size:cover;
   background-position:center;
 }
